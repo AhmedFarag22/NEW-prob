@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+int main()
+{
+    std::ios_base::sync_with_stdio(0);
+	cin.tie(NULL);
+
+	string num1;
+	int num2 = 0;
+	long long res = 0;
+
+	cin>>num1>>num2;
+
+	for(int i = 0;i<num1.size(); i++){
+        res*=10;
+        res+=num1[i] - '0';
+        res%=num2;
+	}
+	if(res == 0)
+        cout<<"YES";
+    else
+        cout<<"NO";
+
+
+}
