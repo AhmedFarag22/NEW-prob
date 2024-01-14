@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    std::ios_base::sync_with_stdio(0);
+	cin.tie(NULL);
+
+	int a = 0, counter = 0;
+	bool f = 0;
+	cin>>a;
+    for(int i=2;i<a/2; i++){
+        counter = 0;
+        while(a%i == 0){
+            counter++;
+            a/=i;
+        }
+        if(counter>0 && f==1){
+            cout<<"*";
+        }
+        if(counter > 0){
+            cout<<"("<<i<<"^"<<counter<<")";
+            f = 1;
+        }
+
+
+    }
+
+if(a!=1 && f==1)
+    cout<<"*";
+
+if(a != 1){
+    cout<<"("<<a<<"^"<<1<<")";
+}
+
+
+}
