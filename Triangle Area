@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+// Driver method
+int main()
+{
+    std::ios_base::sync_with_stdio(0);
+	cin.tie(NULL);
+
+    int a,b,c;
+
+    cin>>a>>b>>c;
+
+    if((a+b)>c && (a+c)>b && (b+c)>a){
+        cout<<"Valid"<<endl;
+   double s = (a+b+c)/2;
+        cout<<setprecision(8)<<sqrt(s * (s-a) * (s-b) * (s-c));
+
+
+    }
+    else{
+        cout<<"Invalid";
+    }
+
+
+
+
+
+}
+//a, b, c
+
+/*
+s = (a+b+c)/2
+
+area = sqrt(s * (s-a) * (s-b) * (s-c))
+
+*/
