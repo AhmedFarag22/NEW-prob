@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int gcd(int a, int b) {
+    // gcd(a, b) = gcd(b, a % b)
+    // the condition stop if b = 0
+    while (b != 0) {
+        int x = a;
+        a = b;
+        b = x % b;
+    }
+    return a;
+}
+int main() {
+    int a = 20, b = 15;
+    //cin >> a >> b;
+    cout << gcd(a, b);
+    return 0;
+}
