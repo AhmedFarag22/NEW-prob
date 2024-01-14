@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+    std::ios_base::sync_with_stdio(0);
+	cin.tie(NULL);
+
+int radius, length;
+cin >> radius >> length;
+
+int diameter = radius*2;
+
+int diagonal = sqrt(2*pow(length,2));
+if(length >= diameter)
+    cout<<"Square";
+else if(diameter >= diagonal)
+    cout<<"Circle";
+else
+    cout<<"Complex";
+
+
+
+
+}
