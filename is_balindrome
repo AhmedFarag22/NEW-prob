@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+
+int main() {
+	int num;
+	cin >> num; //1551
+	int temp = num;
+	int sum = 0; // 150
+	int d;
+	while (num > 0) { // 1
+		d = num % 10; //1
+		sum = (sum * 10) + d; //1
+		num /= 10; // num = num / 10;
+	}
+	if (temp == sum) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
