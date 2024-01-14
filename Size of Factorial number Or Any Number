@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+// Driver method
+int main()
+{
+    int n = 0; double res = 0;
+    cin>>n;
+int N = n;
+    while(n > 0){
+        res+=log10(n);
+        n--;
+    }
+    res++;
+
+
+
+    cout<<"Number of digits of "<<N<<"! is "<<int(res);
+
+}
